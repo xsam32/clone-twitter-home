@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:twitter_home/widgetes/bottom_post_less.dart';
 import 'package:twitter_home/widgets/bottom_bar.dart';
 import 'package:twitter_home/widgets/new_post.dart';
 
@@ -28,11 +29,15 @@ class HomePage extends StatelessWidget {
           ),
         ),
       ),
-      body: Column(
+      body: ListView(
         children: <Widget>[
-          NewPost(),
-        ],
-      ),
+        Column(
+          children: <Widget>[
+            NewPost(),
+            BottomPostLess(),
+          ],
+        ),
+      ]),
       floatingActionButton: FloatingActionButton(
         onPressed: () {},
         tooltip: 'Increment',
