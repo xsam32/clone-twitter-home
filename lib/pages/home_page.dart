@@ -5,8 +5,11 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('หน้าแรก',
-        style: TextStyle(color: Colors.black,fontWeight: FontWeight.w400,fontSize: 22.0),),
+        title: Text(
+          'หน้าแรก',
+          style: TextStyle(
+              color: Colors.black, fontWeight: FontWeight.w400, fontSize: 22.0),
+        ),
         backgroundColor: Colors.white,
         leading: GestureDetector(
           child: Padding(
@@ -24,11 +27,11 @@ class HomePage extends StatelessWidget {
         ),
       ),
       body: Container(),
-      // floatingActionButton: FloatingActionButton(
-      //   onPressed: (){}),
-      //   tooltip: 'Increment',
-      //   child: Icon(Icons.add),
-      // ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {},
+        tooltip: 'Increment',
+        child: new Icon(Icons.add),
+      ),
     );
   }
 }
