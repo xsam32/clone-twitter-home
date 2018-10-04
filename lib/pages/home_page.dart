@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:twitter_home/widgets/bottom_bar.dart';
+import 'package:twitter_home/widgets/new_post.dart';
 
 class HomePage extends StatelessWidget {
   @override
@@ -27,7 +28,11 @@ class HomePage extends StatelessWidget {
           ),
         ),
       ),
-      body: Container(),
+      body: Column(
+        children: <Widget>[
+          NewPost(),
+        ],
+      ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {},
         tooltip: 'Increment',
