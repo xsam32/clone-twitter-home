@@ -136,7 +136,7 @@ class BottomPostLess extends StatelessWidget {
               ),
             ],
           ),
-        )
+        ),
       ],
     );
   }

@@ -9,7 +9,6 @@ class _NewPostState extends State<NewPost> {
   Widget build(BuildContext context) {
     return Container(
       padding: EdgeInsets.all(0.0),
-      // height: 100.0,
       // color: Colors.blueGrey,
       child: Padding(
         padding: EdgeInsets.all(15.0),
